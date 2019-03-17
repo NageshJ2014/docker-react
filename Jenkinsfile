@@ -1,5 +1,9 @@
 pipeline {
-  agent 'My-Vag'
+  agent {
+    node {
+      label 'My-Vag'
+    }
+  }
   stages {
     stage('build') {
       steps {

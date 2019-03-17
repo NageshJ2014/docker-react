@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent 'My-Vag'
   stages {
     stage('build') {
       steps {

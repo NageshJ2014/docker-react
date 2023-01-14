@@ -7,16 +7,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Get code by Checkout
-      uses: action/checkout@v3
+      - name: Get code by Checkout
+        uses: action/checkout@v3
     
-    - name: Get NPM Version 18
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
+      - name: Get NPM Version 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
         
-    - name: Print Version
-      run: |
-        chmod +x npm-version.sh
-        ./npm-version.sh
-        echo -e "Completed Running the Version
+      - name: Print Version
+        run: |
+          chmod +x npm-version.sh
+          ./npm-version.sh
+          echo -e "Completed Running the Version

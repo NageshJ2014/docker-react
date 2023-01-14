@@ -19,3 +19,10 @@ jobs:
           #./npm-version.sh
           #npm version
           echo  "Completed Running the Version"
+  
+  Context-info:
+    run-on: ubuntu-latest
+    steps:
+      - name: Print Context Info
+        run: echo "${{ toJSON(github) }}"
+  

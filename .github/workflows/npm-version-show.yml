@@ -21,7 +21,7 @@ jobs:
           echo  "Completed Running the Version"
   
   Context-info:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Print Context Info
         run: echo "${{ toJSON(github) }}"

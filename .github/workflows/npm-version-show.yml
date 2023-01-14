@@ -18,4 +18,4 @@ jobs:
           chmod +x npm-version.sh
           ./npm-version.sh
           npm version
-          echo -e "Completed Running the Version"
+          echo  "Completed Running the Version"

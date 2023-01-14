@@ -2,10 +2,8 @@ name:
 on: workflow_dispatch
 
 jobs:
-
   build-and-run:
     runs-on: ubuntu-latest
-
     steps:
       - name: Get code by Checkout
         uses: action/checkout@v3
@@ -15,8 +13,8 @@ jobs:
       #  with:
       #   node-version: 18
         
-      - name: Print Version
-        run: |
-          chmod +x npm-version.sh
-          ./npm-version.sh
-          echo -e "Completed Running the Version
+      #- name: Print Version
+      #  run: |
+      #    chmod +x npm-version.sh
+      #    ./npm-version.sh
+      #    echo -e "Completed Running the Version

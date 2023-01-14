@@ -1,0 +1,11 @@
+name: NJ FirstWorkFlow
+on: workflow_dispatch
+jobs:
+  first-job:
+    name: First WF Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greeting Step
+        run: echo " Hello World Welcome to GitHub Actions"
+      - name: GoodBye Step
+        run: echo "This is saying Good Bye --- "

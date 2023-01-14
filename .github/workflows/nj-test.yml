@@ -12,6 +12,7 @@ jobs:
   Second-job:
     name: Second Parallel Job
     runs-on: ubuntu-latest
+    needs: first-job
     steps:
       - name: Parallel step
         run: |

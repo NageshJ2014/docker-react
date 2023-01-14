@@ -11,10 +11,11 @@ jobs:
       uses: action/checkout@v3
     
     - name: Get NPM Version 18
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-    - name: Prin Version
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+        
+    - name: Print Version
       run: |
         chmod +x npm-version.sh
         ./npm-version.sh

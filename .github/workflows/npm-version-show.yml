@@ -1,4 +1,4 @@
-name: 
+name: Install NPM and Show Version
 on: workflow_dispatch
 
 jobs:

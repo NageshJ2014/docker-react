@@ -9,3 +9,13 @@ jobs:
         run: echo " Hello World Welcome to GitHub Actions"
       - name: GoodBye Step
         run: echo "This is saying Good Bye --- "
+  Second-job:
+    name: Second Parallel Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Parallel step
+        run: |
+          for i in {1..100}; 
+          do 
+          echo $i; 
+          done

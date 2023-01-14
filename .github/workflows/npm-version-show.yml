@@ -16,6 +16,6 @@ jobs:
       - name: Print Version
         run: |
           chmod +x npm-version.sh
-          ./npm-version.sh
-          npm version
+          #./npm-version.sh
+          #npm version
           echo  "Completed Running the Version"
